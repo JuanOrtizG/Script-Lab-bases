@@ -24,3 +24,14 @@ async function tryCatch(callback) {
   }
 }
 ```
+Luego en //aqui va nuestro codigo colocaremos
+
+```javascript
+  const sheet = context.workbook.worksheets.getActiveWorksheet();  //Activa la hoja que queremos utilizar en excel
+  const range = sheet.getRange("B1:AS1069"); // Aqui elegimos el rango de tabla que queremos capturar en nuestro codigo
+  range.load("values"); // volcamos los datos de nuestra tabla
+  const tablaGuardada = range.values; //Guardamos los datos en una lista de sublistas
+
+  console.log(  tablaGuardada[3][4]  ) // elegimos la fila y columna que queremos mostrar en consola
+```
+ 
