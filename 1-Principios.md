@@ -7,8 +7,10 @@ $("#run").click(() => tryCatch(run));
 //inicio de la funcion que contendra nuestro codigo
 async function run() {
   await Excel.run(async (context) => {
-      
-  });//run()
+
+      //aqui va nuestro codigo...
+
+  });
 }
 
 
