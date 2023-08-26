@@ -35,3 +35,18 @@ Luego en *//aqui va nuestro codigo*,  colocaremos:
   console.log(  tablaGuardada[3][4]  ) // tablaGuardada es una lista con sublistas, una estructura de datos normal.
 ```
  
+El tipo de datos que almacena las filas y columnas de Excel es una lista de sublistas:
+```javascript
+tabla = [
+["Nombre","Edad", "telefono"],
+["juan", 34, 1000],
+["Soledad", 29, 2000],
+];
+```
+En donde [...] son las filas y [i] son las columnas
+
+````javascript
+const fila=2;
+const columna=2;
+console.log(   tabla[fila][columna]   );
+```
