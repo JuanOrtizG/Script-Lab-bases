@@ -45,7 +45,7 @@ tabla = [
 ```
 En donde [...] son las filas y [i] son las columnas
 
-````javascript
+```javascript
 const fila=2;
 const columna=2;
 console.log(   tabla[fila][columna]   );
