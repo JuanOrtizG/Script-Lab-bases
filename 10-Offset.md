@@ -4,5 +4,5 @@
     range.load("values");  // cargo los valores 
     await context.sync();
     
-    range.getCell(index, 1).values = [["SI"]]; // El primer datos seria mi punto 0,0 y puedo desplazarme
+    range.getCell(fila, columna).values = [["SI"]]; // El primer datos seria mi punto 0,0 y puedo desplazarme
 ```        
