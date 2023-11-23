@@ -30,6 +30,7 @@ Luego en *//aqui va nuestro codigo*,  colocaremos:
   const sheet = context.workbook.worksheets.getActiveWorksheet();  //Activa la hoja que queremos utilizar en excel
   const range = sheet.getRange("B1:AS1069"); // Aqui elegimos el rango de tabla que queremos capturar en nuestro codigo
   range.load("values"); // volcamos los datos de nuestra tabla
+  await context.sync(); // Debe ir await luego de la carga de datos si o si.
   const tablaGuardada = range.values; //Guardamos los datos en una lista de sublistas
 
   console.log(  tablaGuardada[3][4]  ) // tablaGuardada es una lista con sublistas, una estructura de datos normal.
